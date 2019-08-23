@@ -1,2 +1,13 @@
 # pytest_study
-This is for codes I write studying pytest
+
+## General Information
+This is a repo to keep codes I write reding **Python Testing with Pytest**.
+The book info is [here](https://pragprog.com/book/bopytest/python-testing-with-pytest).
+
+You can get pytest info [here](https://pythontesting.net](https://pythontesting.net/).
+
+## Structure of the Directories
+
+### Chapter1 Getting Started with Pytest
+
+###
