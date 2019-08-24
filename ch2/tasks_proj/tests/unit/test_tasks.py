@@ -5,19 +5,19 @@ def test_asdict():
     """_asdict() should return a dictionary"""
     t_task = Task('do something', 'okken', True, 21)
     t_dict = t_task._asdict()
-    expected = {'summary': 'do somethign',
+    t_expected = {'summary': 'do something',
             'owner': 'okken',
             'done': True,
             'id': 21}
-    assert t_dict == expected
+    assert t_dict == t_expected
 
 
 def test_replace():
-    """replace() should change passed in fields"""
+    """_replace() should change passed in fields"""
     t_before = Task('finish book', 'brian', False)
-    t_after = t_before(id=10, done=True)
+    t_after = t_before._replace(id=10, done=True)
     t_expected = Task('finish book', 'brian', True, 10)
-    assert t_after == expected
+    assert t_after == t_expected
 
 
 def test_defaults():
@@ -25,6 +25,7 @@ def test_defaults():
     t1 = Task()
     t2 = Task(None, None, False, None)
     assert t1 == t2
+
 
 def test_member_access():
     """Check .field funcitonality of namedtuple."""
